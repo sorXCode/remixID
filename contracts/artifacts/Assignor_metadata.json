@@ -1,0 +1,78 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nickname",
+						"type": "string"
+					}
+				],
+				"name": "assign",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "nickname",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Checkpoint.sol": "Assignor"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Checkpoint.sol": {
+			"keccak256": "0x3b2239ee755d5b276861bd63c50d66687ad0550afd8ca2a2d807821aacea9772",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://c526d3206d947f87de49cf267ad7e3f73695b667fdef260bb68cdcbd2b87b0a3",
+				"dweb:/ipfs/QmUtaUHYDPRjj7yij7M7TCWsK7hNDf951Ni4RscaQk37e9"
+			]
+		}
+	},
+	"version": 1
+}

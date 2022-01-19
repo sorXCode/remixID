@@ -1,0 +1,61 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "testInitialCountValue",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"tests/Counter_Test.sol": "TestCounter"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Counter.sol": {
+			"keccak256": "0x7ff8fa0c080a6a027f100e1ff798b910f491dd7f341a26a164d8a0dc1e8c0e24",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://8debdf164f4ffbd010611cc7f7c38dea7d6e45edcd83a789e4c54537d460f47e",
+				"dweb:/ipfs/QmTQmerooXxhP8gcCz6SbEgUe4C6xgTbBXwdCGfVjFFmcQ"
+			]
+		},
+		"tests/Counter_Test.sol": {
+			"keccak256": "0x8cc36963a333642fe78289978dd7e8738156addaf9321a823837b82617bb098d",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://a83e01368fa58cab1fcaa19bf09e4698c65d30d715352f5fa9e413f9faafcbd2",
+				"dweb:/ipfs/QmR6NyEQW6rwA2u3UNRMi57jByEmJ1keBUJNSYQo2s4Ns7"
+			]
+		}
+	},
+	"version": 1
+}
