@@ -1,0 +1,36 @@
+Arguments: 
+  /Users/sorxcode/.nvm/versions/node/v17.1.0/bin/node /Users/sorxcode/.nvm/versions/node/v17.1.0/bin/yarn add solidity-r
+
+PATH: 
+  /Users/sorxcode/.nvm/versions/node/v17.1.0/bin:/Users/sorxcode/google-cloud-sdk/bin:/usr/local/go/bin:/Users/sorxcode/executables:/Users/sorxcode/Downloads/mongodb-database-tools-macos-x86_64-100.3.0/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/usr/local/opt/openjdk/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Library/Apple/usr/bin:/Users/sorxcode/.nvm/versions/node/v17.1.0/bin:/Users/sorxcode/google-cloud-sdk/bin:/Users/sorxcode/executables:/Users/sorxcode/Downloads/mongodb-database-tools-macos-x86_64-100.3.0/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/usr/local/opt/openjdk/bin:/Users/sorxcode/flutter/bin:/Users/sorxcode/flutter/bin
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  17.1.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/solidity-r: Not found
+      at Request.params.callback [as _callback] (/Users/sorxcode/.nvm/versions/node/v17.1.0/lib/node_modules/yarn/lib/cli.js:67029:18)
+      at Request.self.callback (/Users/sorxcode/.nvm/versions/node/v17.1.0/lib/node_modules/yarn/lib/cli.js:140883:22)
+      at Request.emit (node:events:390:28)
+      at Request.<anonymous> (/Users/sorxcode/.nvm/versions/node/v17.1.0/lib/node_modules/yarn/lib/cli.js:141855:10)
+      at Request.emit (node:events:390:28)
+      at IncomingMessage.<anonymous> (/Users/sorxcode/.nvm/versions/node/v17.1.0/lib/node_modules/yarn/lib/cli.js:141777:12)
+      at Object.onceWrapper (node:events:509:28)
+      at IncomingMessage.emit (node:events:402:35)
+      at endReadableNT (node:internal/streams/readable:1340:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

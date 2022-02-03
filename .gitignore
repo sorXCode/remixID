@@ -1,2 +1,5 @@
 artifacts/
 .deps/
+soljs*.js
+node_modules
+.vscode
