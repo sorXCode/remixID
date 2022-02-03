@@ -65,7 +65,7 @@ contract ENS {
     function purchaseENS(string memory _ens)
         external
         payable
-        noReentrant()
+        noReentrant
         ENSAvailable(_ens)
     {
         // TODO: refund excess ether sent
@@ -77,10 +77,12 @@ contract ENS {
         emit ENSPurchaseSuccessful("Purchase successful", _ens);
     }
 
-    function getMyENS() public view returns(string memory _ens) {
+    /// @notice Gives ens purchased by msg.sender in a string format, separated by '; '
+    /// @return _ens -> all ens purchased by an address separated by ';'
+    function getMyENS() public view returns (string memory _ens) {
         bytes[] memory _all_ens = purchased_ens_addr_map[msg.sender];
-        for (uint i=0; i<_all_ens.length; i++){
-                _ens = string(abi.encodePacked(_ens, _all_ens[i], EXTENSION, "; "));
+        for (uint256 i = 0; i < _all_ens.length; i++) {
+            _ens = string(abi.encodePacked(_ens, _all_ens[i], EXTENSION, "; "));
         }
     }
 }
