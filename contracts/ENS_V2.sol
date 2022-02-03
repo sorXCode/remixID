@@ -11,8 +11,8 @@ contract ENS {
         MEDIUM,
         LONG
     }
-    mapping(address => bytes) purchased_ens_addr_map;
-    mapping(string => bool) purchased_ens;
+    mapping(address => bytes[]) private purchased_ens_addr_map;
+    mapping(string => bool) private purchased_ens;
     mapping(ENS_CATEGORY => uint64) private pricing;
     bytes constant EXTENSION = ".ens";
     address immutable owner;
@@ -20,7 +20,7 @@ contract ENS {
 
     modifier ENSAvailable(string memory _ens) {
         require(bytes(_ens).length > 0, "ENS too short");
-        require(!isENSAvailable(_ens), "ENS is not available");
+        require(isENSAvailable(_ens), "ENS is not available");
         _;
     }
 
@@ -65,15 +65,22 @@ contract ENS {
     function purchaseENS(string memory _ens)
         external
         payable
-        ENSAvailable(_ens)
         noReentrant()
+        ENSAvailable(_ens)
     {
         // TODO: refund excess ether sent
         uint256 amt_sent_diff = msg.value - getPrice(_ens);
         require(amt_sent_diff >= 0, "amount sent too low");
         // return excess to user wallet at end of logic
-        purchased_ens_addr_map[msg.sender] = bytes(_ens);
+        purchased_ens_addr_map[msg.sender].push(bytes(_ens));
         purchased_ens[_ens] = true;
         emit ENSPurchaseSuccessful("Purchase successful", _ens);
+    }
+
+    function getMyENS() public view returns(string memory _ens) {
+        bytes[] memory _all_ens = purchased_ens_addr_map[msg.sender];
+        for (uint i=0; i<_all_ens.length; i++){
+                _ens = string(abi.encodePacked(_ens, _all_ens[i], EXTENSION, "; "));
+        }
     }
 }
