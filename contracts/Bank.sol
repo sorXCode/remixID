@@ -68,6 +68,5 @@ contract Bank {
         (bool sent, bytes memory data) = _to.call{value: _amount}("");
         require(sent, "Transfer failed");
         emit SendTransferReciept(data);
-
     }
 }

@@ -54,8 +54,4 @@ contract ENS {
         return address_ens_map[msg.sender];
     }
 
-
-
-
-
 }
