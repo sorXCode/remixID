@@ -1854,6 +1854,11 @@ jsesc@~0.5.0:
   resolved "https://registry.yarnpkg.com/jsesc/-/jsesc-0.5.0.tgz#e7dee66e35d6fc16f710fe91d5cf69f70f08911d"
   integrity sha1-597mbjXW/Bb3EP6R1c9p9w8IkR0=
 
+json-to-graphql-query@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/json-to-graphql-query/-/json-to-graphql-query-2.2.2.tgz#cec6ca465b77aca2507ae7cdbbf6bc4eb1ed6795"
+  integrity sha512-qijC+qnviwzh+tDn9UfsVJyySV5NipJTLwzdR9E59rdmPxhdpD1YtUw8zTB1LwR+XoHP9Y2+OrpVH8XAFNR4AQ==
+
 json5@^0.5.1:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/json5/-/json5-0.5.1.tgz#1eade7acc012034ad84e2396767ead9fa5495821"
