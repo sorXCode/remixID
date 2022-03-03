@@ -1,0 +1,134 @@
+query getM {
+  metas {
+    id
+    scraper_meta {
+      language
+vendor
+currency
+source
+index_urls {
+    url
+    gender
+    category
+}
+products_meta {
+    pagination_meta {
+        page_url_field
+        pagination_style
+        total_pages_field_path {
+            path_steps {
+                data_type
+                field_name
+            }
+        }
+        items_per_page
+    }
+    product_list_path {
+        data_type
+        field_name
+    }
+    product_fields {
+        external_id {
+            path_steps {
+                data_type
+                field_name
+            }
+        }
+        review_query {
+            path_steps {
+                data_type
+                field_name
+            }
+            text_transform {
+                prepend_text
+            }
+        }
+        name {
+            path_steps {
+                data_type
+                field_name
+            }
+            text_transform {
+                replace {
+                    to_be_replaced
+                    replacement
+                }
+            }
+        }
+        image {
+            path_steps {
+                data_type
+                field_name
+            }
+        }
+        url {
+            path_steps {
+                data_type
+                field_name
+            }
+            text_transform {
+                prepend_text
+            }
+        }
+        price {
+            path_steps {
+                data_type
+                field_name
+            }
+        }
+    }
+}
+reviews_meta {
+    url
+    product_url_field
+    pagination_meta {
+        page_url_field
+        pagination_style
+        total_pages_field_path {
+            path_steps {
+                data_type
+                field_name
+            }
+        }
+        items_per_page
+    }
+    review_list_path {
+        data_type
+        field_name
+    }
+    review_fields {
+        external_id {
+            path_steps {
+                data_type
+                field_name
+            }
+        }
+        comment {
+            path_steps {
+                data_type
+                field_name
+            }
+        }
+        rating {
+            path_steps {
+                data_type
+                field_name
+            }
+        }
+        rating_total {
+            path_steps {
+                data_type
+                field_name
+            }
+        }
+        title {
+            path_steps {
+                data_type
+                field_name
+            }
+        }
+    }
+}
+    }
+  }
+}
